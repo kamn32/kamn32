@@ -11,6 +11,8 @@ spec:
       app: server
   template:
     metadata:
+      annotations:
+        diamanti.com/endpoint0: '{"network":"nginx","perfTier":"high"}'
       name: nginx-server
       labels:
         app: server
